@@ -1,0 +1,2 @@
+# NLW | Shorts Summary API
+
