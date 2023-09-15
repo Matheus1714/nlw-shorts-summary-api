@@ -4,7 +4,10 @@ export async function summarize(text: string){
     try {
         console.log("Perform the summary...")
 
-        const generator = await pipeline("summarization", "Xenova/distilbart-xsum-12-6")
+        const generator = await pipeline(
+            "summarization",
+            "Xenova/distilbart-cnn-12-6"
+        )
 
         const output = await generator(text)
 
